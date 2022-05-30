@@ -52,15 +52,15 @@ console.log(`The remainder of 25 divide by 4 is: ${x}`);
 
 
 // (6)
-let d = quadraticFormula(4,4,6);
-let y = quadraticFormula(4,4, 6);
 
-function quadraticFormula(a, b,c) {
-    const d = (((-1*b) + Math.sqrt(Math.pow(b,2)) - (4*a*c))/(2*a));
-    const y = (((-1*b) - Math.sqrt(Math.pow(b,2)) - (4*a*c))/(2*a));
-    return `${d} , ${y}`
+function quadraticEquation(a, b,c) {
+    var root1 = (((-1*b) + Math.sqrt(Math.pow(b,2)) - (4*a*c))/(2*a));
+    var root2 = (((-1*b) - Math.sqrt(Math.pow(b,2)) - (4*a*c))/(2*a));
+    console.log(`The root of the quadratic equation is X = ${root1} or X = ${root2}`);
 };
-console.log(`The root of the quadratic equation is X = ${d}`);
+
+quadraticEquation(2, -3, 2)
+
 
 
 // (7)
@@ -77,22 +77,24 @@ console.log(wordBlanks);
 // (8)
 
 
-const pi = 3.142;
-let area = calculateArea(9);
-function calculateArea(radius) {
-    var area = pi * (Math.pow(radius,2));
-    return area;
-}
 
-console.log(`The area of the circle of radius 9cm is ${area}`);
+
+function calculateArea(r) {
+    const pi = 3.142;
+    var area = pi * (Math.pow(r,2));
+    console.log(`The area of the circle of radius 9cm is ${area}`);
+}
+calculateArea(9);
+
 
 // (9)
 
-let p = 8200;
-let r = 17.5;
-let t = 2.5;
-const SI = (p*r*t)/100;
-console.log(`The Simple Interest is ${SI}`);
+function simpleInterest(p,r,t){
+    var SI =( p*r*t)/100;
+    console.log(`Simple interest is ${SI}`)
+}
+
+simpleInterest(8200, 17.5, 2.5);
 
 // (10)
 
