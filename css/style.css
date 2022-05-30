@@ -6,7 +6,12 @@
 
 
 .group-identity{
-    padding-top: 20%;
+    padding-top: 10%;
+    background: url(../img/background.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .group-identity .group-title{
@@ -44,4 +49,15 @@
     font-size: 24px;
     font-weight: 700;
     color: #fff;
+}
+
+@media(max-width:426px){
+.group-member{
+    width: 300px;
+    height: 250px;
+}
+
+.group-identity .group-title h1, .group-identity .group-title h3 {
+    font-size: 22px;
+}
 }
